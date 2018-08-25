@@ -50,13 +50,13 @@
   <nav class="site-navigation">
     <ul>
       
-        <li><a href="/">Home</a></li>
+        <li><a href="/">首页</a></li>
       
-        <li><a href="/archives">archives</a></li>
+        <li><a href="/archives">归档</a></li>
       
-        <li><a href="/categories">Categories</a></li>
+        <li><a href="/categories">分类</a></li>
       
-        <li><a href="/tags">Tags</a></li>
+        <li><a href="/tags">标签</a></li>
       
     </ul>
   </nav>
@@ -121,6 +121,27 @@
     
   </div>
 </article>
+
+  
+	<section id="comment" class="comment">
+		<div id="gitment"></div>
+	</section>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'daitra@sina.com',
+			repo: 'Gitment',
+			oauth: {
+				client_id: 'b8322cc969e5b18107f5',
+				client_secret: 'f6aa8f1ec7d89022049e40ffdec3e7087a1f07d2',
+			},
+		})
+		gitment.render('gitment')
+	</script>
+
+
+
 
 
     </main>
